@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(247, 241, 241);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#search-bar {
+  background-color: #252525;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#search {
+  padding: 7px 5px;
+  border-radius: 10px;
+  color: black;
+  border: 0.5px solid;
+  font-size: 18px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#ser-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #ff7301;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+#clr-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #ff7301;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+#home-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#home {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff7301;
+  border-radius: 10px;
+}
+
+#card img {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+#cards {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  padding-top: 5px;
+  /* padding:10px 20px; */
+  background-color: rgb(247, 241, 241);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#card {
+  background-color: white;
+  max-width: fit-content;
+  border: 1px solid white;
+  border-radius: 10px;
+  /* align-items: center; */
+  display: grid;
+  /* flex-direction: column; */
+  gap: 2rem;
+  padding: 10px 20px;
+
+  /* transition: all 0.3s ease; */
+  /* border: 2px rgb(128, 128, 128); */
+}
+
+#card:hover {
+  background-color: white;
+  max-width: fit-content;
+  border: 1px black hsl(0, 0%, 80%);
+  border-radius: 10px;
+  /* align-items: center; */
+  display: grid;
+  gap: 2rem;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+#card h3 {
+  font-size: large;
+  color: #ff7301;
+}
+
+#card p {
+  font-size: 15px;
+}
+
+#card button {
+  padding: 10px 20px;
+  max-width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  font-size: large;
+  color: black;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  /* text-decoration: underline; */
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+#card button:hover {
+  padding: 10px 20px;
+  text-decoration: none;
+  max-width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: #ff7301;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+footer .container {
+  padding-bottom: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 3rem;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #252525;
+}
+
+footer .column h4 {
+  color: #ff7301;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  gap: 3rem;
+  /* padding-bottom: 2rem; */
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .socials a {
+  color: #fbe3d1;
+  /* border: 1px solid #ccc; */
+  padding: 9px 1px;
+  margin: 5px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+footer .socials a:hover {
+  /* border-color: #252525; */
+  background-color: #252525;
+  color: #ff7301;
+}
+
+footer .column a {
+  display: block;
+  color: #e4c4b4;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column a:hover {
+  color: white;
+}
+
+.copyright {
+  padding-top: 10px;
+  max-width: 1300px;
+  color: #252525;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
